@@ -7,7 +7,7 @@
 </head>
 <body>
     <!-- Form -->
-    <form action="/practice_folder_php/form_get.php" method="get">
+    <form action="form_post.php" method="post">
         <!-- Username field -->
         <label for="username">Username</label><br>
         <input type="text" name="username"><br>
@@ -19,8 +19,8 @@
 <pre>
 <?php
         // get the value from the form
-        $user = $_GET['username']; //username
-        $pass = $_GET['password']; //password
+        $user = $_POST['username']; //username
+        $pass = $_POST['password']; //password
 
         //print the value in the same page
       printf("Username is:{$user}\n");
