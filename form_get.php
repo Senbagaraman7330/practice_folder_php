@@ -25,6 +25,7 @@
         //print the value in the same page
       printf("Username is:{$user}\n");
       printf("Password is:{$pass}\n");
+    
     ?>
 </pre>
 </body>
