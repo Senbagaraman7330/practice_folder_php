@@ -22,6 +22,7 @@
          <!-- submit button  -->
          <button name="sanitize">Sanitize</button>
          <button name="vaildate">Vaildate</button><br>
+</form>
 
          <?PHP 
            // sanitize the get value 
