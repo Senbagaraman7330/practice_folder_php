@@ -34,8 +34,13 @@ if (mysqli_num_rows($check_result) > 0) {
     // Insert new user
     $sql = "INSERT INTO register (username, password, email, phone) 
             VALUES ('$username', '$password', '$email', '$phone')";
+             if (mysqli_query($conn,$sql)){
+                echo "The new record inserted successfully ".$conn->insert_id;
+             }
+             else {
+                echo "The new record is not inserted successfully";
+             }
 
-    mysqli_query($conn,$sql);
     if (mysqli_error($conn)) {
         echo "Not Register successfully";
     } 
